@@ -49,7 +49,9 @@ public class XpDropOverlayManager
 	public static final DecimalFormat XP_FORMATTER = new DecimalFormat(XP_FORMAT_PATTERN);
 	public static final Font RUNESCAPE_BOLD_FONT = XpDropOverlayUtilities.initRuneScapeBold();
 	// Used to order skills in the same order as the vanilla xp drops would display them
-	public static final int[] SKILL_INDICES = new int[] {10, 0, 2, 4, 6, 1, 3, 5, 16, 15, 17, 12, 20, 14, 13, 7, 11, 8, 9, 18, 19, 22, 21};
+	public static final int[] SKILL_INDICES = new int[]{
+		10, 0, 2, 4, 6, 1, 3, 5, 16, 15, 17, 12, 20, 14, 13, 7, 11, 8, 9, 18, 19, 22, 21
+	};
 
 	@Inject
 	private XpDropOverlay xpDropOverlay;
@@ -248,7 +250,7 @@ public class XpDropOverlayManager
 			{
 				if (xpDropInFlight.getFrame() > threshold)
 				{
-					int point = (int)xpDropInFlight.getFrame() - threshold;
+					int point = (int) xpDropInFlight.getFrame() - threshold;
 					float fade = Math.max(0.0f, Math.min(1.0f, point / (float) delta));
 					xpDropInFlight.setAlpha(Math.max(0, 0xff - fade * 0xff));
 				}
@@ -316,7 +318,7 @@ public class XpDropOverlayManager
 				icons |= 1 << CustomizableXpDropsPlugin.SKILL_PRIORITY[skill.ordinal()];
 			}
 			if (config.predictedHitIcon() == XpDropsConfig.PredictedHitIconStyle.HITSPLAT ||
-					config.predictedHitIcon() == XpDropsConfig.PredictedHitIconStyle.HITSPLAT_SKILL)
+				config.predictedHitIcon() == XpDropsConfig.PredictedHitIconStyle.HITSPLAT_SKILL)
 			{
 				icons |= 1 << 24;
 			}
@@ -450,7 +452,7 @@ public class XpDropOverlayManager
 		if (maxMonospaceDigit == null || maxMonospaceDigit.getFont() == null || !maxMonospaceDigit.getFont().equals(graphics.getFont()))
 		{
 			maxMonospaceDigit = new MaxMonospaceDigit(0, "0", graphics.getFont());
-			char[] chars = new char[] {'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
+			char[] chars = new char[]{'1', '2', '3', '4', '5', '6', '7', '8', '9', '0'};
 			for (char aChar : chars)
 			{
 				if (graphics.getFontMetrics().charWidth(aChar) >= maxMonospaceDigit.getWidth())

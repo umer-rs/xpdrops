@@ -37,6 +37,6 @@ public abstract class RoomLevelInvariant extends ToANPC
 
 	protected int calculateHp(int raidLevel, int partySize, int pathLevel, double multiplier)
 	{
-		return (int)(Math.round(baseHP * raidLevelMod(raidLevel) * teamModifiers[partySize]) * multiplier);
+		return (int) (Math.round(baseHP * raidLevelMod(raidLevel) * teamModifiers[partySize]) * multiplier);
 	}
 }

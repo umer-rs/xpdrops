@@ -94,6 +94,7 @@ public enum CoXNPCs
 		GREAT_OLM_MELEE_HAND(new GreatOlm(600, 250, 250, 87, 250, 175, 0, 0, 200, 200, 200, 50, 200)),
 		SCAVENGER(new Scavenger(30, 120, 120, 1, 1, 45, 0, 0, 0, 0, 0, 0, 0));
 		private final CoXNPC coxnpc;
+
 		CoXNPCStats(CoXNPC coxnpc)
 		{
 			this.coxnpc = coxnpc;

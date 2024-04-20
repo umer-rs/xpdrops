@@ -10,6 +10,6 @@ public class ScarabNPC extends ToANPC
 	@Override
 	protected int calculateHp(int raidLevel, int partySize, int pathLevel)
 	{
-		return (int)(Math.floor(baseHP * raidLevelMod(raidLevel) * roomModifiers[pathLevel] * teamModifiers[partySize]));
+		return (int) (Math.floor(baseHP * raidLevelMod(raidLevel) * roomModifiers[pathLevel] * teamModifiers[partySize]));
 	}
 }

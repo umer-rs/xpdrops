@@ -92,7 +92,7 @@ public class XpDropOverlay extends Overlay
 				else
 				{
 					int iconsWidth = XpDropOverlayUtilities.getIconWidthForIcons(graphics, xpDropInFlight.getIcons(), config, xpDropOverlayManager);
-					x = (int)(totalWidth / 2.0f - (textWidth + iconsWidth) / 2.0f + iconsWidth + xStart);
+					x = (int) (totalWidth / 2.0f - (textWidth + iconsWidth) / 2.0f + iconsWidth + xStart);
 				}
 				XpDropOverlayUtilities.drawText(graphics, text, x, textY, (int) xpDropInFlight.getAlpha(), config.xpDropBackground());
 

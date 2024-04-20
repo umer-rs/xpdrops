@@ -14,6 +14,6 @@ public class CoreBoss extends ToANPC
 	@Override
 	protected int calculateHp(int raidLevel, int partySize, int pathLevel)
 	{
-		return (int)(Math.round(baseHP * raidLevelMod(raidLevel) * roomModifiers[pathLevel] * teamModifiers[partySize]) * 10.0);
+		return (int) (Math.round(baseHP * raidLevelMod(raidLevel) * roomModifiers[pathLevel] * teamModifiers[partySize]) * 10.0);
 	}
 }

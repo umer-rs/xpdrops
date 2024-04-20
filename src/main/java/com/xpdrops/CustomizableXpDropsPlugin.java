@@ -59,7 +59,9 @@ import static net.runelite.api.ScriptID.XPDROPS_SETDROPSIZE;
 @Slf4j
 public class CustomizableXpDropsPlugin extends Plugin
 {
-	public static final int[] SKILL_PRIORITY = new int[] {1, 5, 2, 6, 3, 7, 4, 15, 17, 18, 0, 16, 11, 14, 13, 9, 8, 10, 19, 20, 12, 22, 21};
+	public static final int[] SKILL_PRIORITY = new int[]{
+		1, 5, 2, 6, 3, 7, 4, 15, 17, 18, 0, 16, 11, 14, 13, 9, 8, 10, 19, 20, 12, 22, 21
+	};
 	private static final int LEVIATHAN_ID = 12214;
 	private static final int VARDORVIS_ID = 12223;
 

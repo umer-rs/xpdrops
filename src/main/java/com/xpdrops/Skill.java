@@ -75,12 +75,14 @@ public enum Skill
 		return name;
 	}
 
-	public static Skill fromSkill(net.runelite.api.Skill skill) {
+	public static Skill fromSkill(net.runelite.api.Skill skill)
+	{
 		return skill.ordinal() < Skill.values().length ? Skill.values()[skill.ordinal()] : null;
 //		return Skill.valueOf(skill.getName().toUpperCase());
 	}
 
-	public net.runelite.api.Skill toSkill() {
+	public net.runelite.api.Skill toSkill()
+	{
 		return ordinal() < net.runelite.api.Skill.values().length ? net.runelite.api.Skill.values()[ordinal()] : null;
 //		return net.runelite.api.Skill.valueOf(getName().toUpperCase());
 	}

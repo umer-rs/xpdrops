@@ -9,6 +9,7 @@ public abstract class ToANPC extends NPCStats
 	public static final double[] roomModifiers = {1.0, 1.08, 1.13, 1.18, 1.23, 1.28, 1.33};
 
 	protected double baseHP;
+
 	public ToANPC(double baseHP, int att, int str, int def, int mage, int range, int offensiveAtt, int offensiveStr, int defensiveStab, int defensiveSlash, int defensiveCrush, int defensiveMage, int defensiveRange)
 	{
 		super(0, att, str, def, mage, range, offensiveAtt, offensiveStr, defensiveStab, defensiveSlash, defensiveCrush, defensiveMage, defensiveRange);
@@ -16,6 +17,7 @@ public abstract class ToANPC extends NPCStats
 	}
 
 	protected abstract int calculateHp(int raidLevel, int partySize, int pathLevel);
+
 	protected double raidLevelMod(int raidLevel)
 	{
 		return 1 + raidLevel * 0.004;

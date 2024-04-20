@@ -242,7 +242,10 @@ public class XpDropOverlayUtilities
 	public static String RGBToHex(int rgb)
 	{
 		StringBuilder hex = new StringBuilder(Integer.toHexString(rgb)); // Apparently never contains more than 8 hex digits.
-		if (hex.length() < 8) while (hex.length() < 8) hex.insert(0, "0");
+		if (hex.length() < 8) while (hex.length() < 8)
+		{
+			hex.insert(0, "0");
+		}
 		return hex.toString();
 	}
 }

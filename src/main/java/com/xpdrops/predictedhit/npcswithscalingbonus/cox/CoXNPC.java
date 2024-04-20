@@ -67,7 +67,9 @@ public class CoXNPC extends NPCStats
 			defenceLevel = (int) (defensiveScaling * getDef() * cmDefenceMultiplier());
 			magicLevel = 1 == getMage() ? 1 : (int) (offensiveScaling * getMage() * cmMagicMultiplier());
 			rangingLevel = 1 == getRange() ? 1 : (int) (offensiveScaling * getRange() * cmOffensiveMultiplier());
-		} else {
+		}
+		else
+		{
 			hitpoints = (int) (hpScaling * getHp());
 			attackLevel = 1 == getAtt() ? 1 : (int) (offensiveScaling * getAtt());
 			strengthLevel = 1 == getStr() ? 1 : (int) (offensiveScaling * getStr());

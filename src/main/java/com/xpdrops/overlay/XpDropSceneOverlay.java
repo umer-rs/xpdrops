@@ -96,7 +96,7 @@ public class XpDropSceneOverlay extends Overlay
 			{
 				int iconsWidth = XpDropOverlayUtilities.getIconWidthForIcons(graphics, xpDropInFlight.getIcons(), config, xpDropOverlayManager);
 				int totalWidth = textWidth + iconsWidth;
-				x = (int)(xStart + point.getX() - totalWidth / 2.0f + iconsWidth);
+				x = (int) (xStart + point.getX() - totalWidth / 2.0f + iconsWidth);
 			}
 			int y = (int) (yStart + point.getY());
 

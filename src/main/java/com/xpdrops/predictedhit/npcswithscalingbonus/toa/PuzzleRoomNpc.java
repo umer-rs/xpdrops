@@ -10,6 +10,6 @@ public class PuzzleRoomNpc extends ToANPC
 	@Override
 	protected int calculateHp(int raidLevel, int partySize, int pathLevel)
 	{
-		return (int)Math.floor(baseHP * raidLevelMod(raidLevel) * teamModifiers[partySize]);
+		return (int) Math.floor(baseHP * raidLevelMod(raidLevel) * teamModifiers[partySize]);
 	}
 }

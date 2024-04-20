@@ -132,7 +132,7 @@ public class XpTrackerOverlay extends Overlay
 
 		XpDropOverlayUtilities.drawText(graphics, XpDropOverlayUtilities.wrapWithTags(xpTrackerColor) + text, imageWidth + monospacedTextWidth - textWidth, textY, alpha, config.xpTrackerBackground());
 
-		return new Dimension(monospacedTextWidth + imageWidth, (int)Math.max(graphics.getFontMetrics().getHeight(), iconDimensions.getHeight()));
+		return new Dimension(monospacedTextWidth + imageWidth, (int) Math.max(graphics.getFontMetrics().getHeight(), iconDimensions.getHeight()));
 	}
 
 	// Returns height of drawn bar.
@@ -149,7 +149,7 @@ public class XpTrackerOverlay extends Overlay
 		long current = Math.max(0, _current - start);
 		if (total > 0)
 		{
-			ratio = current / (double)total;
+			ratio = current / (double) total;
 		}
 
 		int alpha = getAlpha();
@@ -194,6 +194,6 @@ public class XpTrackerOverlay extends Overlay
 				return XpDropOverlayUtilities.drawIcon(graphics, image, x, y, iconWidth, iconHeight, alpha / 0xff, false);
 			}
 		}
-		return new Dimension(0,0);
+		return new Dimension(0, 0);
 	}
 }

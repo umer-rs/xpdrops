@@ -50,7 +50,9 @@ public class TextComponentWithAlpha implements RenderableEntity
 			{
 				alpha = Math.min(Integer.decode("#" + colorString.substring(0, 2)), alpha);
 			}
-			catch (NumberFormatException ignored) { }
+			catch (NumberFormatException ignored)
+			{
+			}
 		}
 		return alpha;
 	}
@@ -83,7 +85,7 @@ public class TextComponentWithAlpha implements RenderableEntity
 
 				switch (background)
 				{
-					case OUTLINE :
+					case OUTLINE:
 					{
 						graphics.drawString(textWithoutCol, x, position.y + 1);
 						graphics.drawString(textWithoutCol, x, position.y - 1);
@@ -113,7 +115,7 @@ public class TextComponentWithAlpha implements RenderableEntity
 
 			switch (background)
 			{
-				case OUTLINE :
+				case OUTLINE:
 				{
 					graphics.drawString(text, position.x, position.y + 1);
 					graphics.drawString(text, position.x, position.y - 1);
